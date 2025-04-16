@@ -1,0 +1,57 @@
+conky.config = {
+    alignment = 'top_left',
+    background = false,
+    border_width = 1,
+    cpu_avg_samples = 2,
+    default_color = 'white',
+    default_outline_color = 'white',
+    default_shade_color = 'white',
+    double_buffer = true,
+    draw_borders = false,
+    draw_graph_borders = true,
+    draw_outline = false,
+    draw_shades = false,
+    extra_newline = false,
+    gap_x = 10,
+    gap_y = 20,
+    minimum_height = 5,
+    minimum_width = 200,
+    net_avg_samples = 2,
+    no_buffers = true,
+    out_to_console = false,
+    out_to_ncurses = false,
+    out_to_stderr = false,
+    out_to_x = true,
+    own_window = true,
+    own_window_class = 'Conky',
+    own_window_type = 'desktop',
+    own_window_transparent = true,
+    stippled_borders = 0,
+    update_interval = 1.0,
+    uppercase = false,
+    use_spacer = 'none',
+    show_graph_scale = false,
+    show_graph_range = false
+};
+
+conky.text = [[
+${color cyan}SYSTEM INFORMATION${color}
+Hostname: $nodename
+Uptime: $uptime
+Frequency (in MHz): $freq
+RAM Usage: $mem/$memmax - $memperc% used
+Swap Usage: $swap/$swapmax - $swapperc% used
+
+${color cyan}CPU USAGE${color}
+CPU Usage: ${cpu cpu0}%
+${cpubar cpu0 4,100}
+
+${color cyan}TOP PROCESSES${color}
+${top name 1} ${top cpu 1}%
+${top name 2} ${top cpu 2}%
+${top name 3} ${top cpu 3}%
+
+${color cyan}FILESYSTEM${color}
+Root: ${fs_free /} free of ${fs_size /}
+]];
+
