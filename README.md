@@ -1,0 +1,1 @@
+It's mostly Imperfect, I don't have much .dotfiles I really care about, also my desktop is xfce with i3wm so I don't have things like mod shift e to logout, or the bar, so look at files, see if you like somethings and then add it to your own
