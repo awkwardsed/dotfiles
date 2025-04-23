@@ -1,0 +1,17 @@
+"xdotool mousemove_relative -- -10 0"
+  Control+Shift + Left
+
+"xdotool mousemove_relative -- 10 0"
+  Control+Shift + Right
+
+"xdotool mousemove_relative -- 0 -10"
+  Control+Shift + Up
+
+"xdotool mousemove_relative -- 0 10"
+  Control+Shift + Down
+
+"sleep 0.25 && xdotool click 1"
+  c:90
+
+"sleep 0.25 && xdotool click 3"
+  c:91
