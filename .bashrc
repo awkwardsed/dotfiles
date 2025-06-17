@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-=======
-# .bashrc
 
->>>>>>> 76bb846 (even more alias)
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
@@ -153,5 +149,3 @@ qemu-spice() {
         -chardev spicevmc,id=spicechannel0,name=vdagent \
         -hda "$img"
 }
-=======
->>>>>>> 76bb846 (even more alias)
