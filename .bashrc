@@ -101,14 +101,6 @@ qemu-spice() {
         -hda "$img"
 }
 
-<<<<<<< HEAD
-PS1='[\W]\$ '
-
-alias ls='lsd'
-alias grep='grep --color=auto'
-alias bashconfig="vim ~/.bashrc"
-alias Vdownload="proxychains4 yt-dlp -f 'bestvideo[height<=480]+bestaudio/best[height<=480]'"
-
 # Create new QEMU image and optionally install from ISO
 qemu-new() {
     local img="${1:-qemu.img}"
